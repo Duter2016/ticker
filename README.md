@@ -7,7 +7,7 @@
 
 <h1 align="center">Ticker</h2>
 <p align="center">
-Terminal stock watcher and stock position tracker
+终端股票观察和股票仓位跟踪
 </p>
 <p align="center">
 <img align="center" src="./docs/ticker.gif" />
@@ -15,10 +15,10 @@ Terminal stock watcher and stock position tracker
 
 ## Features
 
-* Live stock price quotes
-* Track value of your stock positions
-* Support for multiple cost basis lots
-* Support for pre and post market price quotes
+* 实时股票报价
+* 追踪您的股票仓位价值
+* 支持多个成本基础批段cost basis lots
+* 支持开市前和开市后的报价
 
 ## Install
 
@@ -48,18 +48,19 @@ ticker -w NET,AAPL,TSLA
 ## Usage
 |Alias|Flag|Default|Description|
 |-|-|-|-|
-|  |--config|`~/.ticker.yaml`|config with watchlist and positions|
-|-i|--interval|`5`|Refresh interval in seconds|
-|-w|--watchlist||comma separated list of symbols to watch|
-|  |--show-tags||display currency, exchange name, and quote delay for each quote |
-|  |--show-fundamentals||display open price, previous close, and day range |
-|  |--show-separator||layout with separators between each quote|
-|  |--show-summary||show total day change, total value, and total value change|
+|  |--config|`~/.ticker.yaml`|配置监视列表和仓位|
+|-i|--interval|`5`|刷新间隔（以秒为单位）|
+|-w|--watchlist||逗号分隔的股票代码列表|
+|  |--show-tags||显示每个报价的货币，交易所名称和报价延迟 |
+|  |--show-fundamentals||显示开盘价、前收盘价和日波动范围 |
+|  |--show-separator||每个报价之间有分隔符的布局|
+|  |--show-summary||显示总日变化、总值和总值变化|
 |  |--proxy||proxy URL for requests (default is none)|
 
 ## Configuration
 
 Configuration is not required to watch stock price but is helpful when always watching the same stocks. Configuration can also be used to set cost basis lots which will in turn be used to show daily gain or loss on any position.
+观察股票价格，配置并不必需，但总是有助于观察相同的股票。配置也可以用来设置成本基础批段，这可将用于显示每日盈利或损失的任何仓位。
 
 ```yaml
 # ~/.ticker.yaml
